@@ -11,7 +11,7 @@ function App() {
   // Fetch all notes
   const fetchNotes = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/notes');
+      const res = await axios.get('https://notes-manager-back-end.onrender.com/api/notes');
       setNotes(res.data);
     } catch (error) {
       console.error('Error fetching notes:', error);
@@ -27,7 +27,7 @@ function App() {
   const addNote = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/notes', form);
+      await axios.post('https://notes-manager-back-end.onrender.com/api/notes', form);
       toast.success('Note added successfully!');
       setForm({ title: '', description: '' });
       fetchNotes();
