@@ -1,4 +1,4 @@
-## 📁 `frontend/README.md`
+## 📁 `Frontend/README.md`
 
 ```md
 # 📝 Notes Manager – Frontend (React.js)
